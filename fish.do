@@ -10,3 +10,6 @@ reg SHOALING TREATMENT STAGE TREAT_STAGE
 
 *Visualisation of model
 graph twoway scatter SHOALING TREATMENT || lfit SHOALING TREATMENT
+
+*Robustness check
+reg SHOALING TREATMENT STAGE TREAT_STAGE, vce(robust)
